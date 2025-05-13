@@ -11,6 +11,8 @@ COPY . .
 
 RUN npm run build
 
+COPY public/.well-known /app/dist/.well-known
+
 FROM nginx:stable-alpine AS production
 
 RUN rm /etc/nginx/conf.d/default.conf

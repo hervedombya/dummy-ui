@@ -8,9 +8,11 @@ export default defineConfig({
     rspack: {
       plugins: [
         new ModuleFederationPlugin({
-          name: "dummy-ui",
+          name: "dummy_ui",
           filename: "static/js/remoteEntry.js",
-          exposes: {},
+          exposes: {
+            "./FederableApp": "./src/App.tsx",
+          },
           shared: {
             react: { singleton: true, requiredVersion: false },
             "react-dom": { singleton: true, requiredVersion: false },
