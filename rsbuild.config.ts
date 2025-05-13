@@ -4,6 +4,11 @@ import { ModuleFederationPlugin } from "@module-federation/enhanced-rspack";
 
 export default defineConfig({
   plugins: [pluginReact()],
+  source: {
+    entry: {
+      index: "./src/index.tsx",
+    },
+  },
   tools: {
     rspack: {
       plugins: [
@@ -13,10 +18,7 @@ export default defineConfig({
           exposes: {
             "./FederableApp": "./src/App.tsx",
           },
-          shared: {
-            react: { singleton: true, requiredVersion: false },
-            "react-dom": { singleton: true, requiredVersion: false },
-          },
+          shared: [],
         }),
       ],
     },
