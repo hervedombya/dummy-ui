@@ -5,6 +5,8 @@
     "kind": "dummy-ui"
   },
   "spec": {
-    "remoteEntryPath": "/mf-manifest.json"
+    "remoteEntryPath": "/mf-manifest.json",
+    "publicPath": "/dummy-ui",
+    "version": "1.0.0"
   }
 }

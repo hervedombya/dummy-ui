@@ -1,6 +1,7 @@
 import { defineConfig } from "@rsbuild/core";
 import { pluginReact } from "@rsbuild/plugin-react";
 import { ModuleFederationPlugin } from "@module-federation/enhanced-rspack";
+import path from "path";
 
 export default defineConfig({
   plugins: [pluginReact()],
@@ -11,6 +12,13 @@ export default defineConfig({
   },
   tools: {
     rspack: {
+      output: {
+        filename: "static/js/[name].[contenthash].js",
+        assetModuleFilename: "static/assets/[name].[hash][ext][query]",
+        cssFilename: "static/css/[name].[contenthash].css",
+        path: path.resolve(__dirname, "dist"),
+        publicPath: "/dummy-ui/",
+      },
       plugins: [
         new ModuleFederationPlugin({
           name: "dummy_ui",
