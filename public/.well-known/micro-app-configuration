@@ -1,0 +1,10 @@
+{
+  "kind": "MicroAppConfiguration",
+  "apiVersion": "ui.scality.com/v1alpha1",
+  "metadata": {
+    "kind": "dummy-ui"
+  },
+  "spec": {
+    "remoteEntryPath": "/mf-manifest.json"
+  }
+}

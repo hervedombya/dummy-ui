@@ -1,0 +1,11 @@
+{
+  "kind": "MicroAppRuntimeConfiguration",
+  "apiVersion": "ui.scality.com/v1alpha1",
+  "metadata": {
+    "kind": "dummy-ui",
+    "name": "dummy-ui.eu-west-1"
+  },
+  "spec": {
+    "title": "Dummy UI"
+  }
+}
