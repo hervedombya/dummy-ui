@@ -9,7 +9,7 @@
     "publicPath": "/dummy-ui",
     "version": "1.0.0",
     "views": {
-      "dummy": {
+      "dummy-ui": {
         "path": "/",
         "label": {
           "en": "Dummy UI",
