@@ -7,6 +7,17 @@
   "spec": {
     "remoteEntryPath": "/mf-manifest.json",
     "publicPath": "/dummy-ui",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "views": {
+      "dummy": {
+        "path": "/",
+        "label": {
+          "en": "Dummy UI",
+          "fr": "Dummy"
+        },
+        "module": "./FederableApp",
+        "scope": "dummy-ui"
+      }
+    }
   }
 }
