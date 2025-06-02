@@ -16,7 +16,7 @@
           "fr": "Dummy"
         },
         "module": "./FederableApp",
-        "scope": "dummy-ui"
+        "scope": "dummy_ui"
       }
     }
   }
